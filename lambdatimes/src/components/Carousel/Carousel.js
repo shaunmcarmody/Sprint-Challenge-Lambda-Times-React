@@ -13,7 +13,7 @@ export default class Carousel extends Component {
     this.setState({
       carousel: carouselData,
       currentImage: carouselData[0],
-      index: carouselData.length - 1
+      index: 0
     })
   }
 

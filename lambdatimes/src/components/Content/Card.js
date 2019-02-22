@@ -15,8 +15,8 @@ const Card = props => {
   );
 };
 
-// Make sure to include PropTypes.
-
-Card.propTypes = PropTypes.objectOf(PropTypes.string)
+Card.prototype = {
+  card: PropTypes.objectOf(PropTypes.string)
+}
 
 export default Card;

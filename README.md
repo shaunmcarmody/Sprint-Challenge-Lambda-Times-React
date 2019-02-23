@@ -29,9 +29,20 @@ Look through the application code. If you have the old Lambda Times (Applied Jav
 ## Self-Study/Essay Questions
 
 - [ ] What are PropTypes used for? Please describe why it's important to type check our data in JavaScript.
+
+    Components are constructed based on the data they receive and we make assumptions on the most efficient type of data being passed down. With JavaScript being a loosely typed language, and not requiring us to confirm data type of a variable, this can cause problems when incorrect data types are handled by a component, so PropTypes are used to control the type of data being passed via props.
+
 - [ ] Describe a life-cycle event in React?
+
+    In the mounting phase of a components lifecycle a constructor function is invoked when initialising state within a class component, after the constructor function runs the initial render function takes the initial data from state and renders the components to the screen. Once the render function runs we then run componentDidMount, where we can then make an asynchronous call, fetch data and pass it to state.
+
 - [ ] Explain the details of a Higher Order Component?
+
+    A higher order component is a function that takes in one or more components and returns an new instance of the component. Higher order function can reuse the same functionality without needing the same context, this allows a new instance to include additional functionality.
+
 - [ ] What are three different ways to style components in React? Explain some of the benefits of each.
+
+    You can style component in React; natively(including via compiler) which allows your components to remain looking like traditional markup which making them easier to read in both the React dev tools and your code editor, functionally which tightly couples styling with components which makes a components style predictable and consistent and doesn't allow for any style leaks, and with a themed library which are great when speed is a priority because they allow for quick development.
 
 ## Project Setup
 
